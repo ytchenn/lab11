@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab11</title>
+</head>
+<body>
+<script>
+	var num,rand;
+	rand=Math.floor((Math.random()*10)+1);
+	num=parseInt(window.prompt("Guess a number(1-10)"));
+	while(num<=10&&num>=1){
+	if(rand!=num){
+		alert("Guess wrong!try again!");
+		num=parseInt(window.prompt("Guess a number(1-10)"));
+	}else{
+		alert("correct!");
+		break;
+	}
+}
+
+</script>
+</body>
+</html>
